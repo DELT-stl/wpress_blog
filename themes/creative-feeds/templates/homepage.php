@@ -21,6 +21,7 @@ get_header();
 					<li><a href="#">photography</a></li>
 					<li><a href="#">print</a></li>
 					<li><a href="#">lifestyle</a></li>
+					
 				</div>
 			</div>
 			
@@ -201,36 +202,25 @@ get_header();
 					</div>
 					<div class="spirebar ">
 						<h3><span>Weekly inspiration</span></h3>
+                        
+                        <?php $do_not_duplicate = array(); ?>
+                        <?php $catquery = new WP_Query( 'cat=2&posts_per_page=1'); ?>
+                        <?php while($catquery->have_posts()) : $catquery->the_post();  $do_not_duplicate[] = $post->ID;?>
+						<div class="inspire">
+							<a href="#"><img src="<?php the_post_thumbnail_url('full'); ?>" class="width100"></a>
+						</div>
+                        <?php endwhile;
+                            wp_reset_postdata();
+                        ?>
 
+                        <?php $catquery = new WP_Query( 'cat=2&posts_per_page=8'); ?>
+                        <?php while($catquery->have_posts()) : $catquery->the_post();  $do_not_duplicate[] = $post->ID;?>
 						<div class="inspire">
-							<a href="#"><img src="https://scontent-ort2-1.cdninstagram.com/vp/c9609463909a4486e39e92ecb7361f25/5B32C184/t51.2885-15/s640x640/sh0.08/e35/28435061_167346624065443_7761307432051015680_n.jpg" class="width100"></a>
+							<img src="<?php the_post_thumbnail_url('full'); ?>">
 						</div>
-
-						<div class="inspire">
-							<img src="https://scontent-ort2-1.cdninstagram.com/vp/aee09cd2c730230fe98086b6f43d6328/5B3B2DBF/t51.2885-15/s640x640/sh0.08/e35/28751600_120420192059752_2347154014711316480_n.jpg">
-						</div>
-						<div class="inspire">
-							<img src="https://scontent-ort2-1.cdninstagram.com/vp/d60db4271ed1984ff6e628ec0a7db070/5B357736/t51.2885-15/s640x640/sh0.08/e35/28435221_363159900832082_5802313139710066688_n.jpg">
-						</div>
-						<div class="inspire">
-							<img src="https://www.creativesfeed.com/wp-content/uploads/2018/03/inspire4.jpg">
-						</div>
-						<div class="inspire">
-							<img src="https://scontent-ort2-1.cdninstagram.com/vp/ababa5dab49191e3e0373a5fbad3e6a7/5B356A48/t51.2885-15/s750x750/sh0.08/e35/28434714_158493304856569_883766731779080192_n.jpg">
-						</div>
-
-						<div class="inspire">
-							<img src="https://www.creativesfeed.com/wp-content/uploads/2018/03/inspire2.jpg">
-						</div>
-						<div class="inspire">
-							<img src="https://scontent-ort2-1.cdninstagram.com/vp/4a46ee8bd182a6ce44922758322bb8f6/5B2BE86E/t51.2885-15/s640x640/sh0.08/e35/28434674_148812682479812_9170462300375613440_n.jpg">
-						</div>
-						<div class="inspire">
-							<img src="https://scontent-ort2-1.cdninstagram.com/vp/5befb1196b55b80726c201a019706e74/5B4CEC1A/t51.2885-15/s640x640/sh0.08/e35/28752197_785691394973520_5169018639956836352_n.jpg">
-						</div>
-						<div class="inspire">
-							<img src="https://scontent-ort2-1.cdninstagram.com/vp/cf1d0630250511420aa319d6ef7cdb17/5B38DA7B/t51.2885-15/s640x640/sh0.08/e35/29094245_581006042234286_7908571879126859776_n.jpg">
-						</div>
+				        <?php endwhile;
+                            wp_reset_postdata();
+                        ?>
 						<a class="more" href="#"><span>read article</span></a>
 					</div>
 				</div>
