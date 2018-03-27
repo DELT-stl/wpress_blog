@@ -189,6 +189,7 @@ get_header();
 			<div class="col-sm-4">
 				<div class="relly ">
 					<div class="spirearrow">
+						<?xml version="1.0" encoding="UTF-8"?>
 						<svg data-name="Layer 1" viewBox="0 0 279.3 418.9" xmlns="http://www.w3.org/2000/svg">
 							<path transform="translate(-3 -4.3)" d="m132.5 27.6l9.8-23.3 139.6 283.3-18.4 8.9z" data-name="Shape 4 copy 6"/>
 							<path transform="translate(-3 -4.3)" d="m133.1 43.5h20.2v379.7h-20.2z" data-name="Shape 5 copy 5"/>
