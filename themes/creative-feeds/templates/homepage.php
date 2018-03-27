@@ -201,29 +201,38 @@ get_header();
 							<path transform="translate(-3 -4.3)" d="M4.5,288.8l18.1,8.9L153.4,29.1,141.8,8.6Z" data-name="Shape 4 copy 6-2"/>
 						</svg>
 					</div>
-					<div class="spirebar ">
-						<h3><span>Weekly inspiration</span></h3>
-                        
-                        <?php $do_not_duplicate = array(); ?>
-                        <?php $catquery = new WP_Query( 'cat=2&posts_per_page=1'); ?>
-                        <?php while($catquery->have_posts()) : $catquery->the_post();  $do_not_duplicate[] = $post->ID;?>
-						<div class="inspire">
-							<a href="#"><img src="<?php the_post_thumbnail_url('full'); ?>" class="width100"></a>
+                <div class="spirebar ">
+                    <h3><span>Weekly inspiration</span></h3>
+                    <?php
+                        $do_not_duplicate = array(); // set befor loop variable as array
+                    
+                        // 1. Loop
+                        query_posts('cat=2&showposts=1'); //Change cat id number to what inspiration id number is. 
+                        while ( have_posts() ) : the_post();
+                            $do_not_duplicate[] = $post->ID; // remember ID's in loop
+                    ?>
+                            <div class="inspire">
+							 <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url('full'); ?>" class="width100"></a>
+						    </div>
+                    <?php
+                        endwhile;
+                    ?> 
+                    
+                    <?php
+                        // 2. Loop
+                        query_posts( 'cat=2&showposts=9' ); //Change cat id number to what inspiration id number is. 
+                        while (have_posts()) : the_post();
+                            if ( !in_array( $post->ID, $do_not_duplicate ) ) { // check IDs  
+                    ?>
+                        <div class="inspire">
+                            <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url('full'); ?>"></a>
 						</div>
-                        <?php endwhile;
-                            wp_reset_postdata();
-                        ?>
-
-                        <?php $catquery = new WP_Query( 'cat=2&posts_per_page=8'); ?>
-                        <?php while($catquery->have_posts()) : $catquery->the_post();  $do_not_duplicate[] = $post->ID;?>
-						<div class="inspire">
-							<img src="<?php the_post_thumbnail_url('full'); ?>">
-						</div>
-				        <?php endwhile;
-                            wp_reset_postdata();
-                        ?>
-						<a class="more" href="#"><span>read article</span></a>
-					</div>
+                    <?php
+                            }
+                        endwhile;
+                    ?>
+                        <a class="more" href="#"><span>read article</span></a>
+					</div>																	
 				</div>
 			</div>
 		</div>

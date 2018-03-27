@@ -1831,7 +1831,7 @@ footer hr {
 }
 
 .spirebar .inspire img {
-	width: 100%;
+	/*width: 100%;*/
 	width: 50%;
 	float: left;
 	height: 175px;
