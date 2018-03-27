@@ -216,6 +216,7 @@ get_header();
 						    </div>
                     <?php
                         endwhile;
+                        wp_reset_postdata();
                     ?> 
                     
                     <?php
@@ -230,6 +231,7 @@ get_header();
                     <?php
                             }
                         endwhile;
+                        wp_reset_postdata();
                     ?>
                         <a class="more" href="#"><span>read article</span></a>
 					</div>																	
