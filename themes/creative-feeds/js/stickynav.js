@@ -23,11 +23,12 @@ function once(fn, context) {
 var links = $('.main-nav-list li');
 $(window).on('scroll', function() {
     $('.products').each(function(i, obj) {
-        if($(window).scrollTop() >= $(this).offset().top) {
+        if($(window).scrollTop() +$(window).height() >= $(this).offset().top) {
              var id = $(this).attr('id');
             $('li').removeClass('hi-lited');
             $(links.eq(i)).addClass('hi-lited');
            }
+        
     });
 });
-    });
+});

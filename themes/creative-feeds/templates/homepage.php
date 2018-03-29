@@ -63,7 +63,15 @@ get_header();
 			<div class="col-sm-4">
 				<a href="<?php the_permalink(); ?>">
 					<div class="post_card">
-						<img src="<?php the_post_thumbnail_url('full'); ?>">
+<!--                        here-->
+                            <img src="<?php the_post_thumbnail_url(); ?>"
+                                 srcset="
+                                <?php the_post_thumbnail_url( 'medium' ); ?> 700w, 
+                                <?php the_post_thumbnail_url( 'large' );?> 1600w" 
+                                sizes="
+                                    (max-width:700px) 700px,
+                                    (min-width:701px) 1600px" 
+                                 />
 						<div class="overlay"></div>
 						<div class="third">
 							<div class="info"><a href="#">branding</a></div>
@@ -118,6 +126,7 @@ get_header();
 			<div class="col-sm-4">
 				<a href="<?php the_permalink(); ?>">
 					<div class="post_card">
+                        
 						<img src="<?php the_post_thumbnail_url('full'); ?>">
 						<div class="overlay"></div>
 						<div class="third">

@@ -2452,6 +2452,7 @@ sticky {
 .products-title {
 	color: #1C1E2C;
 	text-transform: uppercase;
+    font-size:55px;
 	position: relative;
 	font-family: 'airfare'
 }
