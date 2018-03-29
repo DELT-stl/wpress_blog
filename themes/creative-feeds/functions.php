@@ -16,6 +16,15 @@ if ( ! function_exists( 'creative_feeds_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function creative_feeds_setup() {
+//                            XL - 1900 x 800
+//                            Large - 1500 x 700
+//                            Medium - 650 x 800
+//                            Small - 650 x 500
+
+        add_image_size( 'xl', 1900, 800, true );
+        add_image_size( 'l', 1500, 700, true );
+        add_image_size( 'm', 650, 800, true );
+        add_image_size( 's', 650, 500, true );
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
