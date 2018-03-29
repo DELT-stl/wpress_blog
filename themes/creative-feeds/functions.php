@@ -159,3 +159,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/*DELT Functions*/
+//Custom Post Types
+function creative_feeds_post_type(){
+    register_post_type('author', array(
+        'public' => true,
+        'labels' => array(
+            'name' => 'Authors'
+        )
+    ));
+}
+
+add_action('init', 'creative_feeds_post_type');
