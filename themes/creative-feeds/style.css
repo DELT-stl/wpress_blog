@@ -2315,7 +2315,304 @@ ul {
     height: 100px;
 }
 
+/* PRODUCTS PAGE */
+/* h3 h1 p */
+.featured-image p {
+    width:120%;
+    margin-left:-10%;
+    text-align: center;
+    color:black;
+    padding-bottom:50px
+}
+.featured-image h2 {
+    padding-top:10vh;
+    font-size: 42px;
+    text-align:center;
+    margin-left:-10%;
+  white-space: nowrap;
+}
+/* fixed sidebar */
+.sidebar-fixed {
+    position:fixed !important;
+    padding-top:30vh !important;
+    z-index: 3;
+}
+.sidebar-fixed li {
+	list-style: none;
+	font-size: 22px;
+	line-height: 26px;
+	padding: 5px 10px;
+}
+.sidebar-fixed li a {
+	color: #1C1E2C;
+	text-transform: uppercase;
+	position: relative;
+	font-family: 'airfare'
+}
+.sidebar-fixed li a:after {
+	position: absolute;
+	width: 80%;
+	bottom: 0;
+	left: 0;
+	background: #03fc96;
+	height: 55%;
+	content: '';
+	z-index: -1;
+	margin-left: -5px;
+	transition: .3s ease;
+}
+.sidebar-fixed li a:hover:after {
+	width: 100%;
+	background: #9b03fc
+}
+.products-page h1 {
+    white-space:nowrap;
+    font-size: 60px;
+    text-align:center;
+}
+.featured-heading {
+    position:relative;
+    text-align:center;
+    width:100%;
+    top:200px
+}
+.featured-heading p {
+    color:black;
+}
+.featured-heading .featured {
+    height: 75vh;
+    width:50vw;
+    margin:auto;
+}
+.image-overlay {
+    background:white;
+    position:absolute;
+    bottom:0;
+    width:40%;
+    line-height:20px;
+    text-align:left !important;
+}
 
+sticky {
+    position: sticky;
+    top: 100px;
+}
+.image-overlay h1 {
+    text-align:left;
+    line-height:30px;
+}
+.main-nav-scrolled {
+    position:fixed !important;
+    top:310 !important;
+    
+    padding-left:155px !important;
+    padding-top:-120 !important;
+}
+.main-nav-list {
+/*    position:fixed;*/
+/*    position:relative;*/
+/*    position:relative;*/
+    line-height:40px;
+    
+    white-space:nowrap;
+    list-style:none;
+/*    left:-30px;*/
+    top:380px;
+    
+}
+.products {
+    position:relative;
+    padding-top:20%;
+    
+    text-align:center;
+        margin:auto;
+}
+.products img {
+    padding:20px !important;
+}
+
+.products-heading {
+    height:50vh !important;
+    
+}
+.featured-heading {
+    height:50vh !important;
+}
+.main-nav {position:absolute; top:300px;}
+.main-nav-list li {
+    transition: 1s;
+    cursor:pointer;
+}
+.main-nav-list li:hover {
+    color:black;
+}
+.fixed		{ position: fixed; top:0;}
+/*#main-nav 			{ position: absolute; width: 100%; background: #bbb; z-index:1; height: 75px; left: 0; top:300px;}*/
+
+.products-title {
+	color: #1C1E2C;
+	text-transform: uppercase;
+	position: relative;
+	font-family: 'airfare'
+}
+.products-title:after {
+	position: absolute;
+	width: 50%;
+	bottom: 40;
+	left: 25%;
+	background: #03fc96;
+	height: 55%;
+	content: '';
+	z-index: -1;
+/*	margin-left: -5px;*/
+	transition: .5s ease-in;
+}
+.products-title:hover:after {
+	transform: scale(1.5);
+	background: #9b03fc
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.no-overflow {
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+.main-content .posts-page {
+   margin-top:10%;   
+    height:1100px;
+    
+    object-fit:contain;
+/*    overflow-y:hidden;*/
+}
+.main-content {
+    
+}
+.under_the_box h1{
+    text-align:center;
+    padding-top:10px;
+    font-size:60px;
+}
+.visit {
+    background-color:green;
+    text-align:center !important;
+    position:relative;
+    width:200px;
+    margin:auto;
+    height:50px;
+    bottom:10px;
+    z-index:5 !important;
+    
+}
+.visit * {
+    
+}
+.main-content {
+    width:100%;
+    padding: 0px !important;
+}
+.posts-page *{
+    padding-left:0px !important;
+    padding-right:0px !important;
+    text-align:center;
+}
+
+.graybox {
+    background:gray !important;
+    color:gray;
+    height:75%;
+    
+    width:75%;
+    margin:auto;
+}
+.posts-image {
+    width:100%
+}
+.webdi {
+    width:50%;
+    float:left;
+}
+.webdi h1{
+    text-transform: uppercase;
+    font-size:24px;    
+    color:gray;
+}
+.webdi h2{
+    font-size:60px;
+}
+footer {
+    height:1000px;
+    background:red;
+}
+.hi-lited {
+    color:black !important;
+    opacity: 1 !important;
+}
+.webdi h3 {
+    font-size: 24px;
+}
+.webdi h5 {
+    text-transform: none;
+    color:gray;
+}
+.next-web-design {
+    width:50%;
+    float:right;
+}
+.next-web-design h1{
+    font-size: 40px;
+    text-align:center;
+}
+.next-web-design h3 {
+    text-align:center;
+    font-size:24px;
+}
+.next-web-design * {
+    text-align:center;
+}
+.next-web-design div {
+    width:100%;
+}
+.wrapper {
+    margin-left:10%;
+}
+.wrapper * {
+    margin:auto;
+}
+.spacing {
+    height:50px;
+    width:75%;
+    margin:auto;
+    color:gray;
+    background:gray;
+    margin-top:75px !important;
+}
+
+.more-inspiration {
+}
+.more-inspiration h1 {
+    text-transform: uppercase;
+    font-size:20px;
+    margin-left:165px;
+    font-weight:bold;
+}
+
+.products_content {
+    
+}
+
+.clear {
+    width:100%;
+    height:150px;
+}
+
+.items .col-md-3 {
+text-align:center;    
+}
 
 
 
