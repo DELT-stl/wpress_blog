@@ -24,7 +24,8 @@ if ( ! function_exists( 'creative_feeds_setup' ) ) :
         add_image_size( 'xl', 1900, 800, true );
         add_image_size( 'l', 1500, 700, true );
         add_image_size( 'm', 650, 800, true );
-        add_image_size( 's', 650, 500, true );
+        add_image_size( 's', 650, 520, true );
+        add_image_size( 'xs', 400, 520, true );
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
