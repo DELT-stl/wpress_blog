@@ -64,13 +64,26 @@ get_header();
 				<a href="<?php the_permalink(); ?>">
 					<div class="post_card">
 <!--                        here-->
+<!--
+                            XL - 1900 x 800
+                            Large - 1500 x 700
+                            Medium - 650 x 800
+                            Small - 650 x 500
+-->
+<!--
+                        srcset="http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1.jpg 1920w, 
+http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-300x188.jpg 300w, 
+http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-768x480.jpg 768w, 
+http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-1024x640.jpg 1024w" 
+-->
                             <img src="<?php the_post_thumbnail_url(); ?>"
                                  srcset="
-                                <?php the_post_thumbnail_url( 'medium' ); ?> 700w, 
-                                <?php the_post_thumbnail_url( 'large' );?> 1600w" 
-                                sizes="
-                                    (max-width:700px) 700px,
-                                    (min-width:701px) 1600px" 
+                                <?php the_post_thumbnail_url( 's' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'l' );?> 1500w, 
+                                <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
+                                 
+                                sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"
                                  />
 						<div class="overlay"></div>
 						<div class="third">
