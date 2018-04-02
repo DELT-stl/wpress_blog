@@ -9,9 +9,9 @@ $('.main-nav-list').sticky({
     stickyClass: ".main-nav-scrolled"
 });
     //EXECUTES ONLY ONCE
-function once(fn, context) { 
+function once(fn, context) {
 	var result;
-	return function() { 
+	return function() {
 		if(fn) {
 			result = fn.apply(context || this, arguments);
 			fn = null;
@@ -23,12 +23,12 @@ function once(fn, context) {
 var links = $('.main-nav-list li');
 $(window).on('scroll', function() {
     $('.products').each(function(i, obj) {
-        if($(window).scrollTop() +$(window).height() >= $(this).offset().top) {
+        if($(window).scrollTop() +$(window).height() >= $(this).offset().top -$(this).height()) {
              var id = $(this).attr('id');
             $('li').removeClass('hi-lited');
             $(links.eq(i)).addClass('hi-lited');
            }
-        
+
     });
 });
 
