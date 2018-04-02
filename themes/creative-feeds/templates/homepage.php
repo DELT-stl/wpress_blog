@@ -34,7 +34,17 @@ get_header();
 		    ?>
 			
 			<div class="col-sm-10">
-				<div class="hphero" style="background: url(<?php the_post_thumbnail_url('full'); ?>) center center no-repeat; background-size: cover;">
+				<div class="hphero bgFromSrcSet">
+                    <img class="srcSet" src="<?php the_post_thumbnail_url(); ?>"
+                                 srcset="<?php the_post_thumbnail_url( 'xs' ); ?> 400w, 
+                                <?php the_post_thumbnail_url( 's' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'l' );?> 1500w, 
+                                <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
+                                sizes="(min-width:1363px) 83vw, (max-width: 1362px) 62vw, (max-width: 909px) 67vw, (max-width: 709px) 85vw,   840px, (max-width:400px) 85vw"
+                                 />
+                         
+                    
 					<div class="lay"></div>
 					<div class="hpcallout">
 						<h2><?php the_title(); ?></h2>
@@ -63,20 +73,13 @@ get_header();
 			<div class="col-sm-4">
 				<a href="<?php the_permalink(); ?>">
 					<div class="post_card">
-<!--                        here-->
 <!--
                             XL - 1900 x 800
                             Large - 1500 x 700
                             Medium - 650 x 800
                             Small - 650 x 500
 -->
-<!--
-                        srcset="http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1.jpg 1920w, 
-http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-300x188.jpg 300w, 
-http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-768x480.jpg 768w, 
-http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-1024x640.jpg 1024w" 
--->
-<!--                        (max-width: 3000px) 600px, -->
+
                             <img src="<?php the_post_thumbnail_url(); ?>"
                                  srcset="<?php the_post_thumbnail_url( 'xs' ); ?> 400w, 
                                 <?php the_post_thumbnail_url( 's' ); ?> 650w, 
@@ -120,7 +123,7 @@ http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-1024x640.jpg 1024
                                 <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'l' );?> 1500w, 
                                 <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
-                                sizes="(min-width:1363px) 33vw, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"
+                                sizes="(min-width:1363px) 50vw, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"
                                  />
 						<div class="overlay"></div>
 						<div class="third">
@@ -217,7 +220,7 @@ http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-1024x640.jpg 1024
                                 <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'l' );?> 1500w, 
                                 <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
-                                sizes="(min-width:1363px) 33vw, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"
+                                sizes="(min-width:1363px) 50vw, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"
                                  />
 								<div class="overlay"></div>
 								<div class="third">
@@ -259,7 +262,8 @@ http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-1024x640.jpg 1024
                             <div class="inspire">
 							 <a href="<?php the_permalink(); ?>">
                                  <img src="<?php the_post_thumbnail_url('full'); ?>" 
-                                      srcset="<?php the_post_thumbnail_url( 's' ); ?> 650w, 
+                                      srcset="<?php the_post_thumbnail_url('xs'); ?>
+                                <?php the_post_thumbnail_url( 's' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'l' );?> 1500w, 
                                 <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
@@ -279,7 +283,16 @@ http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-1024x640.jpg 1024
                             if ( !in_array( $post->ID, $do_not_duplicate ) ) { // check IDs  
                     ?>
                         <div class="inspire">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url('full'); ?>"></a>
+                            <a href="<?php the_permalink(); ?>">
+                                <img src="<?php the_post_thumbnail_url('full'); ?>" 
+                                      srcset="<?php the_post_thumbnail_url('xs'); ?> 400w,
+                                <?php the_post_thumbnail_url( 's' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'l' );?> 1500w, 
+                                <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
+                                sizes="(min-width:1363px) 14vw, (max-width: 709px) 45vw, (max-width: 909px) 40vw, (max-width: 1362px) 62vw, 840px"
+                                    >
+                            </a>
 						</div>
                     <?php
                             }
@@ -311,7 +324,14 @@ http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-1024x640.jpg 1024
 					<div class="col-sm-6">
 						<a href="<?php the_permalink(); ?>">
 							<div class="post_card">
-								<img src="<?php the_post_thumbnail_url('full'); ?>">
+								<img src="<?php the_post_thumbnail_url('full'); ?>" 
+                                      srcset="<?php the_post_thumbnail_url('xs'); ?> 400w,
+                                <?php the_post_thumbnail_url( 's' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'l' );?> 1500w, 
+                                <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
+                                sizes="(min-width:1363px) 33vw, (max-width: 709px) 45vw, (max-width: 909px) 40vw, (max-width: 1362px) 62vw, 840px"
+                                    >
 								<div class="overlay"></div>
 								<div class="third">
 									<div class="info"><a href="#">branding</a></div>
@@ -356,7 +376,14 @@ http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-1024x640.jpg 1024
 			<div class="col-sm-4">
 				<a href="<?php the_permalink(); ?>">
 					<div class="post_card">
-						<img src="<?php the_post_thumbnail_url('full'); ?>">
+						<img src="<?php the_post_thumbnail_url(); ?>"
+                                 srcset="<?php the_post_thumbnail_url( 'xs' ); ?> 400w, 
+                                <?php the_post_thumbnail_url( 's' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'l' );?> 1500w, 
+                                <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
+                                sizes="(min-width:1363px) 33vw, (max-width: 1362px) 62vw, (max-width: 909px) 67vw, (max-width: 709px) 85vw,   840px, (max-width:400px) 85vw"
+                                 />
 						<div class="overlay"></div>
 						<div class="third">
 							<div class="info"><a href="#">branding</a></div>
@@ -376,7 +403,14 @@ http://127.0.0.1/wordpress/wp-content/uploads/2018/03/Bunny1-1-1024x640.jpg 1024
 			<div class="col-sm-8">
 				<a href="<?php the_permalink(); ?>">
 					<div class="post_card">
-						<img src="<?php the_post_thumbnail_url('full'); ?>">
+						<img src="<?php the_post_thumbnail_url(); ?>"
+                                 srcset="<?php the_post_thumbnail_url( 'xs' ); ?> 400w, 
+                                <?php the_post_thumbnail_url( 's' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
+                                <?php the_post_thumbnail_url( 'l' );?> 1500w, 
+                                <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
+                                sizes="(min-width:1363px) 50vw, (max-width: 1362px) 62vw, (max-width: 909px) 67vw, (max-width: 709px) 85vw,   840px, (max-width:400px) 85vw"
+                                 />
 						<div class="overlay"></div>
 						<div class="third">
 							<div class="info"><a href="#">design</a></div>
