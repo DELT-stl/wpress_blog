@@ -39,84 +39,88 @@ get_header();
                 </div>
             </div>
             <div class="clear"></div>
+            <div class="clear"></div>
+            
+            <div class="clear"></div>
+            
             <div class="products_content">
 <div class="row">
                 <div class="col-sm-11 col-md-11 col-lg-11 col-md-offset-1">
                      <div id="ux_prototyping" class="products">
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
                     </div>
                 </div>
     </div>
             <div class="row">
                 <div class="col-sm-11 col-md-11 col-lg-11 col-md-offset-1">
                      <div id="project_management" class="products">
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
                     </div>
                 </div>
     </div>
             <div class="row">
                 <div class="col-sm-11 col-md-11 col-lg-11 col-md-offset-1">
                      <div id="typography" class="products">
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
                     </div>
                 </div>
     </div>
             <div class="row">
                 <div class="col-sm-11 col-md-11 col-lg-11 col-md-offset-1">
                      <div id="photo_editing" class="products">
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
                     </div>
                 </div>
     </div>
             <div class="row">
                 <div class="col-sm-11 col-md-11 col-lg-11 col-md-offset-1">
                      <div id="social_media" class="products">
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
                     </div>
                 </div>
     </div>
             <div class="row">
                 <div class="col-sm-11 col-md-11 col-lg-11 col-md-offset-1">
                      <div id="proposal_software" class="products">
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
                     </div>
                 </div>
     </div>
              <div class="row">
                 <div class="col-sm-11 col-md-11 col-lg-11 col-md-offset-1">
                      <div id="icons" class="products">
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
                     </div>
                 </div>
     </div>
             <div class="row">
                 <div class="col-sm-11 col-md-11 col-lg-11 col-md-offset-1">
                      <div id="customer_relationships" class="products">
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
-                        <img src="img/favicon.png"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
+                        <img src="http://127.0.0.1/wordpress/wp-content/uploads/2018/04/best-ux-prototyping-tools-300x191.jpg"/>
                     </div>
                 </div>
     </div>

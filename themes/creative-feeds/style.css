@@ -2404,9 +2404,12 @@ sticky {
 .main-nav-scrolled {
     position:fixed !important;
     top:310 !important;
-    
+    left:-30px !important;
+/*    left:100px !important;*/
+/*
     padding-left:155px !important;
     padding-top:-120 !important;
+*/
 }
 .main-nav-list {
 /*    position:fixed;*/

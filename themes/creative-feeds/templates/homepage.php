@@ -40,7 +40,8 @@ get_header();
                                 <?php the_post_thumbnail_url( 's' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'l' );?> 1500w, 
-                                <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
+                                <?php the_post_thumbnail_url( 'xl' ); ?> 1900w,
+                                <?php the_post_thumbnail_url( 'fs' ); ?> 1920w" 
                                 sizes="(min-width:1363px) 83vw, (max-width: 1362px) 62vw, (max-width: 909px) 67vw, (max-width: 709px) 85vw,   840px, (max-width:400px) 85vw"
                                  />
                          
@@ -86,7 +87,7 @@ get_header();
                                 <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'l' );?> 1500w, 
                                 <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
-                                sizes="(min-width:1363px) 33vw, (max-width: 1362px) 62vw, (max-width: 909px) 67vw, (max-width: 709px) 85vw,   840px, (max-width:400px) 85vw"
+                                sizes="(min-width:1363px) 20vw, (max-width: 1362px) 62vw, (max-width: 909px) 67vw, (max-width: 709px) 85vw,   840px, (max-width:400px) 85vw"
                                  />
 						<div class="overlay"></div>
 						<div class="third">
@@ -154,7 +155,7 @@ get_header();
                                 <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'l' );?> 1500w, 
                                 <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
-                                sizes="(min-width:1363px) 33vw, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"
+                                sizes="(min-width:1363px) 25vw, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"
                                  />
 						<div class="overlay"></div>
 						<div class="third">
@@ -191,7 +192,7 @@ get_header();
                                 <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'l' );?> 1500w, 
                                 <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
-                                sizes="(min-width:1363px) 33vw, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"
+                                sizes="(min-width:1363px) 25vw, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"
                                  />
 								<div class="overlay"></div>
 								<div class="third">
@@ -267,7 +268,7 @@ get_header();
                                 <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'l' );?> 1500w, 
                                 <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
-                                sizes="(min-width:1363px) 33vw, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"
+                                sizes="(min-width:1363px) 25vw, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"
                                       class="width100">
                                 </a>
 						    </div>
@@ -330,7 +331,7 @@ get_header();
                                 <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'l' );?> 1500w, 
                                 <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
-                                sizes="(min-width:1363px) 33vw, (max-width: 709px) 45vw, (max-width: 909px) 40vw, (max-width: 1362px) 62vw, 840px"
+                                sizes="(min-width:1363px) 25vw, (max-width: 709px) 45vw, (max-width: 909px) 40vw, (max-width: 1362px) 62vw, 840px"
                                     >
 								<div class="overlay"></div>
 								<div class="third">
@@ -381,8 +382,9 @@ get_header();
                                 <?php the_post_thumbnail_url( 's' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'm' ); ?> 650w, 
                                 <?php the_post_thumbnail_url( 'l' );?> 1500w, 
-                                <?php the_post_thumbnail_url( 'xl' ); ?> 1900w" 
-                                sizes="(min-width:1363px) 33vw, (max-width: 1362px) 62vw, (max-width: 909px) 67vw, (max-width: 709px) 85vw,   840px, (max-width:400px) 85vw"
+                                <?php the_post_thumbnail_url( 'xl' ); ?> 1900w,
+                                <?php the_post_thumbnail_url( 'fs' ); ?> 1920w" 
+                                sizes="(min-width:1363px) 25vw, (max-width: 1362px) 62vw, (max-width: 909px) 67vw, (max-width: 709px) 85vw,   840px, (max-width:400px) 85vw"
                                  />
 						<div class="overlay"></div>
 						<div class="third">

@@ -6,7 +6,7 @@ $('.main-nav-list').sticky({
     topSpacing: 410,
     zIndex: 100,
     stopper: "footer",
-    stickyClass: ".main-nav-scrolled"
+    stickyClass: "main-nav-scrolled"
 });
     //EXECUTES ONLY ONCE
 function once(fn, context) {
@@ -21,13 +21,17 @@ function once(fn, context) {
 }
 
 var links = $('.main-nav-list li');
+var p = $('.products');
 $(window).on('scroll', function() {
     $('.products').each(function(i, obj) {
-        if($(window).scrollTop() +$(window).height() >= $(this).offset().top -$(this).height()) {
+        if($(window).scrollTop() >= $(this).offset().top - $(this).height()) {
              var id = $(this).attr('id');
             $('li').removeClass('hi-lited');
             $(links.eq(i)).addClass('hi-lited');
            }
+        if ($(window).scrollTop()+$(window).height() <= $('.products').eq(1).offset().top) {
+            $('li').removeClass('hi-lited');
+        }
 
     });
 });

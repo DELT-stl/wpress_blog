@@ -21,6 +21,7 @@ if ( ! function_exists( 'creative_feeds_setup' ) ) :
 //                            Medium - 650 x 800
 //                            Small - 650 x 500
 
+        add_image_size( 'fs', 1920, 1080, true );
         add_image_size( 'xl', 1900, 800, true );
         add_image_size( 'l', 1500, 700, true );
         add_image_size( 'm', 650, 800, true );
